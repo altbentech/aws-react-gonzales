@@ -1,0 +1,14 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  text-align: center;
+}

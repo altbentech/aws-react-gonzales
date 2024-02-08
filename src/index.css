@@ -1,0 +1,395 @@
+/* Font import for Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Resetting default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles with Poppins font and a light gray background */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Smooth scrolling for the entire HTML document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default text color for paragraphs */
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Transition effect for links and buttons */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Desktop navigation styles */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Logo styles */
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* Hamburger menu styles */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hamburger icon styles */
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Menu links styles for the hamburger menu */
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+/* Hamburger icon animation when menu is open */
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Section styles */
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+/* Container for profile section */
+.section-container {
+  display: flex;
+}
+
+/* Profile section styles */
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.section__pic-container > img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* Social icons container */
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* General icon styles */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* Button container styles */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Button styles */
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/* Button color variations */
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* Styling for Calculator component */
+.calculator-star-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator-container {
+  border: 1px solid #717377;
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.calculator-expression-input {
+  width: 320px;
+  padding: 10px;
+  font-size: 40px;
+  border: none;
+  background-color: #d4d4d4;
+  text-align: right;
+  box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+  color: black;
+}
+
+.calculator-expression-input::placeholder {
+  color: black;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator-button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: transparent;
+  box-shadow: -3px -3px 5px rgba(113, 115, 119, 0.5);
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calculator-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calculator-equal {
+  background-color: orange;
+}
+
+.calculator-star-body {
+  position: relative;
+}
+
+.calculator-back-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+}
+
+.calculator-back-button a {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.calculator-back-button a:hover {
+  background-color: darkorange;
+}
+
+/* Styling for Hobbies component */
+.hobbies-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hobby-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hobby-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.back-to-home {
+  margin-top: 20px;
+}
+
+.back-to-home a {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-to-home a:hover {
+  text-decoration: underline;
+}

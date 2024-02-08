@@ -1,0 +1,167 @@
+/* GENERAL */
+
+/* Importing Google Font for the entire document */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Resetting margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the default font family for the document */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Setting smooth scrolling behavior for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Setting default text color for paragraphs */
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+/* Applying smooth transition to links and buttons */
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+/* Styling for the desktop navigation bar */
+#desktop-nav {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#desktop-nav .navbar-nav {
+  margin-left: auto;
+}
+
+/* SECTIONS */
+
+/* Styling for all sections */
+section {
+  box-sizing: border-box;
+  min-height: fit-content;
+  margin-top: 4rem;
+}
+
+/* PROFILE SECTION */
+
+/* Styling for the profile section */
+#profile {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ICONS */
+
+/* Styling for icons */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+/* Styling for buttons and button containers */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/* Styling for specific button colors */
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* Additional styling for button containers */
+.btn-container {
+  gap: 1rem;
+}
+
+/* Styling for the profile picture container */
+.section__pic-container {
+  border-radius: 50%;
+  background-image: url("../images/proj-profile.jpg");
+  background-size: 100%;
+  min-height: 400px;
+  min-width: 400px;
+  background-repeat: no-repeat;
+}
+
+/* Responsive styling for screens with a max-width of 1030px */
+@media screen and (max-width: 1030px) {
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
